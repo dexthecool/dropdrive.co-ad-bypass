@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "DropDrive UUID Extractor",
+  "description": "Detects DropDrive file URLs, extracts UUID, and injects custom JavaScript to bypass ads.",
+  "version": "1.1",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://dropdrive.co/*",
+    "https://infantilecombination.com/*",
+    "https://cdn.jsdelivr.net/gh/orestbida/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": { "type": "block" },
+      "condition": {
+        "urlFilter": "infantilecombination.com",
+        "resourceTypes": ["script", "image", "stylesheet", "xmlhttprequest"]
+      }
+    },
+    {
+      "id": 2,
+      "priority": 1,
+      "action": { "type": "block" },
+      "condition": {
+        "urlFilter": "cdn.jsdelivr.net/gh/orestbida",
+        "resourceTypes": ["script", "image", "stylesheet", "xmlhttprequest"]
+      }
+    }
+  ]
+  
